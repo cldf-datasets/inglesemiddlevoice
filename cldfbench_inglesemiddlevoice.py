@@ -96,7 +96,7 @@ def make_marker_values(data, markers, cparameters, ccodes):
 def make_lvalues(data):
     aggregated_markers = defaultdict(list)
     for row in data:
-        aggregated_markers[fix_glottocode(row['Glottocode'])] = row['Middle marker']
+        aggregated_markers[fix_glottocode(row['Glottocode'])].append(row['Middle marker'])
     return [
         {
             'ID': f'{glottocode}-middle-markers',
