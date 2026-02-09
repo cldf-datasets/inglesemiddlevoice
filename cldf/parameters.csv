@@ -10,7 +10,7 @@ selfbenefactive,Selfbenefactive,"Is the function ""Selfbenefactive"" marked by t
 impersonal,Impersonal,"Is the function ""Impersonal"" marked by the middle marker (mid), by a different construction (compl), by the middle and a competing construction (compt), or does not receive overt coding (no)?",
 facilitative,Facilitative,"Is the function ""Facilitative"" marked by the middle marker (mid), by a different construction (compl), by the middle and a competing construction (compt), or does not receive overt coding (no)?",
 other_opp_class,Other_opp_class,List of the other oppositional functions associated to the middle marker,
-syncretism_pattern,Syncretism_pattern,The syncretism pattern of the middle marker. Includes all the oppositional valency related functions associated to the middle marker.�,
+syncretism_pattern,Syncretism_pattern,The syncretism pattern of the middle marker. Includes all the oppositional valency related functions associated to the middle marker.,
 voice_functions,Voice_functions,Number of voice related functions associated to the middle marker.,
 source_type,Source_type,Diachronic source of the middle marker,
 source_typenonreflexive,Source_type.Nonreflexive,More specific diachronic source of the middle marker if the source is not reflexive.,
