@@ -1,4 +1,4 @@
-# Cross-linguistic sample of middle marking languages
+# Middle voice markers in the languages of the world
 
 [![CLDF validation](https://github.com/cldf-datasets/inglesemiddlevoice/workflows/CLDF-validation/badge.svg)](https://github.com/cldf-datasets/inglesemiddlevoice/actions?query=workflow%3ACLDF-validation)
 
