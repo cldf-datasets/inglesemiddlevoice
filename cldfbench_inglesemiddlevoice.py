@@ -1,8 +1,12 @@
 import pathlib
+import re
 import unicodedata
+import sys
 from collections import defaultdict
+from itertools import chain
 
 from cldfbench import CLDFSpec, Dataset as BaseDataset
+from simplepybtex.database import parse_file
 
 
 ID_CHARS = (
@@ -18,7 +22,7 @@ def slug(s):
         if c in ID_CHARS)
 
 
-def read_cparameters(csv_rows):
+def read_parameters(csv_rows):
     return {
         row['Original_Name']: {
             'ID': slug(row['Name']),
@@ -28,12 +32,15 @@ def read_cparameters(csv_rows):
         for row in csv_rows}
 
 
-def read_ccodes(csv_rows, parameters):
+def read_ccodes(csv_rows, cparameters, lparameters):
+    parameter_ids = {
+        original_name: param['ID']
+        for original_name, param in chain(cparameters.items(), lparameters.items())}
     return {
         (row['Original_Parameter_Name'], row['Original_Name']):
         {
             'ID': row['ID'],
-            'Parameter_ID': parameters[row['Original_Parameter_Name']]['ID'],
+            'Parameter_ID': parameter_ids[row['Original_Parameter_Name']],
             'Name': row['Name'],
         }
         for row in csv_rows}
@@ -65,26 +72,38 @@ def make_languages(data, glottolog):
         for glottocode, name in sorted(glottocodes.items())]
 
 
-def make_markers(data):
-    # TODO: source column
+def valid_marker_citation(ref, sources, gc, marker):
+    bibkey = ref.split('[')[0]
+    if bibkey in sources:
+        return True
+    else:
+        print(f'{gc} ({marker}): Unknown bibkey: {bibkey}', file=sys.stderr)
+        return False
+
+
+def make_markers(data, sources):
     markers = {
         ((gc := fix_glottocode(row['Glottocode'])), row['Middle marker']): {
             'ID': '{}-{}'.format(gc, slug(row['Middle marker'])),
             'Language_ID': gc,
             'Name': row['Middle marker'],
+            'Source': [
+                citation
+                for citation in re.split(r'\s*;\s*', row['References'])
+                if valid_marker_citation(citation, sources, gc, row['Middle marker'])]
         }
         for row in data}
     assert len(markers) == len(data), 'markers are unique'
     return markers
 
 
-def make_marker_values(data, markers, cparameters, ccodes):
+def make_marker_values(data, markers, cparameters, codes):
     return [
         {
             'Parameter_ID': (param_id := param['ID']),
             'Construction_ID': (construction_id := markers[
                 fix_glottocode(row['Glottocode']), row['Middle marker']]['ID']),
-            'Code_ID': (code := ccodes[param_col, value])['ID'],
+            'Code_ID': (code := codes[param_col, value])['ID'],
             'Value': code['Name'],
             'ID': f'{construction_id}-{param_id}',
         }
@@ -93,18 +112,39 @@ def make_marker_values(data, markers, cparameters, ccodes):
         if (value := row.get(param_col)) and value != '_']
 
 
-def make_lvalues(data):
+def make_lvalues(data, lparameters, codes):
+    lvalues = {}
+    for row in data:
+        for param_col, param in lparameters.items():
+            if (value := row.get(param_col)) and value != '_':
+                param_id = param['ID']
+                lang_id = fix_glottocode(row['Glottocode'])
+                code = codes[param_col, value]
+                if (previous_value := lvalues.get((lang_id, param_id))):
+                    # double check that all values are the same
+                    assert previous_value['Code_ID'] == code['ID']
+                else:
+                    lvalues[lang_id, param_id] = {
+                        'ID': f'{lang_id}-{param_id}',
+                        'Language_ID': lang_id,
+                        'Parameter_ID': param_id,
+                        'Code_ID': code['ID'],
+                        'Value': code['Name'],
+                    }
+    return list(lvalues.values())
+
+
+def iter_aggregated_markers(data):
     aggregated_markers = defaultdict(list)
     for row in data:
         aggregated_markers[fix_glottocode(row['Glottocode'])].append(row['Middle marker'])
-    return [
-        {
+    for glottocode, language_markers in aggregated_markers.items():
+        yield {
             'ID': f'{glottocode}-middle-markers',
             'Language_ID': glottocode,
             'Parameter_ID': 'middle-markers',
             'Value': ' / '.join(language_markers),
         }
-        for glottocode, language_markers in aggregated_markers.items()]
 
 
 
@@ -117,12 +157,14 @@ def cldf_schema(cldf):
         'http://cldf.clld.org/v1.0/terms.rdf#id',
         'http://cldf.clld.org/v1.0/terms.rdf#languageReference',
         'http://cldf.clld.org/v1.0/terms.rdf#name',
-        'http://cldf.clld.org/v1.0/terms.rdf#description')
+        'http://cldf.clld.org/v1.0/terms.rdf#description',
+        'http://cldf.clld.org/v1.0/terms.rdf#source')
     cldf.add_table(
         'cvalues.csv',
         'http://cldf.clld.org/v1.0/terms.rdf#id',
         'Construction_ID',
         'http://cldf.clld.org/v1.0/terms.rdf#parameterReference',
+        'http://cldf.clld.org/v1.0/terms.rdf#codeReference',
         'http://cldf.clld.org/v1.0/terms.rdf#value')
     cldf.add_foreign_key(
         'cvalues.csv', 'Construction_ID',
@@ -159,12 +201,14 @@ class Dataset(BaseDataset):
             {k: v.strip() for k, v in row.items() if v.strip()}
             for row in self.raw_dir.read_csv(
                 'Database_middlevoice_final.csv', delimiter=';', dicts=True)]
-        cparameters = read_cparameters(self.etc_dir.read_csv(
+        cparameters = read_parameters(self.etc_dir.read_csv(
             'cparameters.csv', dicts=True))
-        ccodes = read_ccodes(
+        lparameters = read_parameters(self.etc_dir.read_csv(
+            'lparameters.csv', dicts=True))
+        codes = read_ccodes(
             self.etc_dir.read_csv('ccodes.csv', dicts=True),
-            cparameters)
-        lparameters = list(self.etc_dir.read_csv('lparameters.csv', dicts=True))
+            cparameters, lparameters)
+        sources = parse_file(self.raw_dir / 'sources.bib', 'bibtex')
 
         # process data
 
@@ -174,18 +218,29 @@ class Dataset(BaseDataset):
             assert original_name in data_columns, original_name
 
         languages = make_languages(raw_data, args.glottolog.api)
-        markers = make_markers(raw_data)
-        marker_values = make_marker_values(raw_data, markers, cparameters, ccodes)
+        markers = make_markers(raw_data, sources.entries)
+        marker_values = make_marker_values(raw_data, markers, cparameters, codes)
 
-        lvalues = make_lvalues(raw_data)
+        lvalues = make_lvalues(raw_data, lparameters, codes)
+        lvalues.extend(iter_aggregated_markers(raw_data))
+        # intersperse the aggregated markers with the other values
+        language_order = {}
+        for i, r in enumerate(lvalues, 0):
+            if (gc := r['Language_ID']) not in language_order:
+                language_order[gc] = i
+        lvalues.sort(key=lambda r: (language_order[r['Language_ID']], r['Parameter_ID']))
 
         # write cldf
 
         cldf_schema(args.writer.cldf)
 
         args.writer.objects['LanguageTable'] = languages
-        args.writer.objects['ParameterTable'] = [*cparameters.values(), *lparameters]
-        args.writer.objects['CodeTable'] = ccodes.values()
+        args.writer.objects['ParameterTable'] = [
+            *cparameters.values(),
+            *lparameters.values(),
+            {'ID': 'middle-markers', 'Name': 'Middle markers'}]
+        args.writer.objects['CodeTable'] = codes.values()
         args.writer.objects['ValueTable'] = lvalues
         args.writer.objects['constructions.csv'] = markers.values()
         args.writer.objects['cvalues.csv'] = marker_values
+        args.writer.cldf.add_sources(sources)

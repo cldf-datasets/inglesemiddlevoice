@@ -14,6 +14,3 @@ Oppositional,Syncretism_pattern,The syncretism pattern of the middle marker. Inc
 Number_opp_functions,Voice_functions,Number of voice related functions associated to the middle marker.,2; 5; 4; 3; 1; 6; 8; 7
 Source,Source_type,Diachronic source of the middle marker,refl; norefl; unknown
 Source_2,Source_type.Nonreflexive,More specific diachronic source of the middle marker if the source is not reflexive.,_; lex; uncontr ; voice; nom/verb; plur; aspect
-Multiple marking language,Multiple_marking_language,Does a language has more than one middle marker.,no; yes
-Cognate,Multiple_marking_language.cognate,"If a language has more than one middle marker, are they cognate with each other?",_; no; yes
-Co-occurence,Multiple_marking_language.co.occurence,"If a language has more than one middle marker, can they co-occur?",_; no; yes
