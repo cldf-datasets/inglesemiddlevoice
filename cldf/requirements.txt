@@ -4,7 +4,7 @@ bibtexparser==2.0.0b9
 bs4==0.0.2
 certifi==2026.1.4
 cldfbench==1.14.2
--e git+https://github.com/cldf-datasets/inglesemiddlevoice@6cd1f10e51861da0b0825ae475d6e96a0d927129#egg=cldfbench_inglesemiddlevoice
+-e git+https://github.com/cldf-datasets/inglesemiddlevoice@fbf3b7939ddd766317000f429b8393d92c436f57#egg=cldfbench_inglesemiddlevoice
 cldfcatalog==1.6.0
 cldfzenodo==2.2.1
 clldutils==3.24.2

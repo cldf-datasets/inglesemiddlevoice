@@ -8,13 +8,14 @@
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#StructureDataset",
     "dc:identifier": "https://crossgram.clld.org/contributions/inglesemiddlevoice",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:source": "sources.bib",
     "dc:title": "Cross-linguistic sample of middle marking languages",
     "dcat:accessURL": "https://github.com/cldf-datasets/inglesemiddlevoice",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/cldf-datasets/inglesemiddlevoice",
             "rdf:type": "prov:Entity",
-            "dc:created": "6cd1f10",
+            "dc:created": "fbf3b79",
             "dc:title": "Repository"
         },
         {
@@ -39,7 +40,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 129,
+            "dc:extent": 298,
             "tableSchema": {
                 "columns": [
                     {
@@ -329,6 +330,12 @@
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "separator": ";",
+                        "name": "Source"
                     }
                 ],
                 "foreignKeys": [
@@ -351,7 +358,7 @@
             "url": "constructions.csv"
         },
         {
-            "dc:extent": 2280,
+            "dc:extent": 2051,
             "tableSchema": {
                 "columns": [
                     {
@@ -373,6 +380,11 @@
                     },
                     {
                         "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#codeReference",
+                        "name": "Code_ID"
+                    },
+                    {
+                        "datatype": "string",
                         "null": [
                             "?",
                             ""
@@ -388,6 +400,17 @@
                         ],
                         "reference": {
                             "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Code_ID"
+                        ],
+                        "reference": {
+                            "resource": "codes.csv",
                             "columnReference": [
                                 "ID"
                             ]
