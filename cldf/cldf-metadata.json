@@ -9,13 +9,13 @@
     "dc:identifier": "https://crossgram.clld.org/contributions/inglesemiddlevoice",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
-    "dc:title": "Cross-linguistic sample of middle marking languages",
+    "dc:title": "Middle voice markers in the languages of the world",
     "dcat:accessURL": "https://github.com/cldf-datasets/inglesemiddlevoice",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/cldf-datasets/inglesemiddlevoice",
             "rdf:type": "prov:Entity",
-            "dc:created": "fbf3b79",
+            "dc:created": "bc2d1ba",
             "dc:title": "Repository"
         },
         {
