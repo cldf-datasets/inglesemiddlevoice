@@ -1,137 +1,137 @@
-ID,Original_Parameter_Name,Original_Name,Name
-anticausative-compl,Anticausative,compl,construction in complementary distribution
-anticausative-compt,Anticausative,compt,construction in competition
-anticausative-mid,Anticausative,mid,middle marker
-anticausative-no,Anticausative,no,no
-antipassive-compl,Antipassive,compl,construction in complementary distribution
-antipassive-compt,Antipassive,compt,construction in competition
-antipassive-mid,Antipassive,mid,middle marker
-antipassive-no,Antipassive,no,no
-co-occurence-no,Co-occurence,no,no
-co-occurence-yes,Co-occurence,yes,yes
-cognate-no,Cognate,no,no
-cognate-yes,Cognate,yes,yes
-facilitative-mid,Facilitative,mid,middle marker
-facilitative-no,Facilitative,no,no
-impersonal-mid,Impersonal,mid,middle marker
-impersonal-no,Impersonal,no,no
-multiplemarkinglanguage-no,Multiple marking language,no,no
-multiplemarkinglanguage-yes,Multiple marking language,yes,yes
-n-analytic,n,analytic,analytic
-n-synth,n,synth,synthetic
-number_opp_functions-1,Number_opp_functions,1,1
-number_opp_functions-2,Number_opp_functions,2,2
-number_opp_functions-3,Number_opp_functions,3,3
-number_opp_functions-4,Number_opp_functions,4,4
-number_opp_functions-5,Number_opp_functions,5,5
-number_opp_functions-6,Number_opp_functions,6,6
-number_opp_functions-7,Number_opp_functions,7,7
-number_opp_functions-8,Number_opp_functions,8,8
-oppositional-antc,Oppositional,ANTC,ANTC
-oppositional-antcantp,Oppositional,ANTC/ANTP,ANTC/ANTP
-oppositional-antcantpimp,Oppositional,ANTC/ANTP/IMP,ANTC/ANTP/IMP
-oppositional-antcfac,Oppositional,ANTC/FAC,ANTC/FAC
-oppositional-antcrefl,Oppositional,ANTC/REFL,ANTC/REFL
-oppositional-antcreflantp,Oppositional,ANTC/REFL/ANTP,ANTC/REFL/ANTP
-oppositional-antcreflimp,Oppositional,ANTC/REFL/IMP,ANTC/REFL/IMP
-oppositional-antcreflrecp,Oppositional,ANTC/REFL/RECP,ANTC/REFL/RECP
-oppositional-antcreflrecpantp,Oppositional,ANTC/REFL/RECP/ANTP,ANTC/REFL/RECP/ANTP
-oppositional-antcreflrecpantpfac,Oppositional,ANTC/REFL/RECP/ANTP/FAC,ANTC/REFL/RECP/ANTP/FAC
-oppositional-antcreflrecpantpimp,Oppositional,ANTC/REFL/RECP/ANTP/IMP,ANTC/REFL/RECP/ANTP/IMP
-oppositional-antcreflself,Oppositional,ANTC/REFL/SELF,ANTC/REFL/SELF
-oppositional-antcreflselfrecp,Oppositional,ANTC/REFL/SELF/RECP,ANTC/REFL/SELF/RECP
-oppositional-antcreflselfrecpantpimpfac,Oppositional,ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,ANTC/REFL/SELF/RECP/ANTP/IMP/FAC
-oppositional-antcreflselfrecpimpfac,Oppositional,ANTC/REFL/SELF/RECP/IMP/FAC,ANTC/REFL/SELF/RECP/IMP/FAC
-oppositional-antcself,Oppositional,ANTC/SELF,ANTC/SELF
-oppositional-antcselfrecp,Oppositional,ANTC/SELF/RECP,ANTC/SELF/RECP
-oppositional-pass,Oppositional,PASS,PASS
-oppositional-passantc,Oppositional,PASS/ANTC,PASS/ANTC
-oppositional-passantcantp,Oppositional,PASS/ANTC/ANTP,PASS/ANTC/ANTP
-oppositional-passantcfac,Oppositional,PASS/ANTC/FAC,PASS/ANTC/FAC
-oppositional-passantcimpfac,Oppositional,PASS/ANTC/IMP/FAC,PASS/ANTC/IMP/FAC
-oppositional-passantcrecp,Oppositional,PASS/ANTC/RECP,PASS/ANTC/RECP
-oppositional-passantcrecpfac,Oppositional,PASS/ANTC/RECP/FAC,PASS/ANTC/RECP/FAC
-oppositional-passantcrefl,Oppositional,PASS/ANTC/REFL,PASS/ANTC/REFL
-oppositional-passantcreflantp,Oppositional,PASS/ANTC/REFL/ANTP,PASS/ANTC/REFL/ANTP
-oppositional-passantcreflrecp,Oppositional,PASS/ANTC/REFL/RECP,PASS/ANTC/REFL/RECP
-oppositional-passantcreflrecpantp,Oppositional,PASS/ANTC/REFL/RECP/ANTP,PASS/ANTC/REFL/RECP/ANTP
-oppositional-passantcreflrecpfac,Oppositional,PASS/ANTC/REFL/RECP/FAC,PASS/ANTC/REFL/RECP/FAC
-oppositional-passantcreflrecpimp,Oppositional,PASS/ANTC/REFL/RECP/IMP,PASS/ANTC/REFL/RECP/IMP
-oppositional-passantcreflself,Oppositional,PASS/ANTC/REFL/SELF,PASS/ANTC/REFL/SELF
-oppositional-passantcreflselfantp,Oppositional,PASS/ANTC/REFL/SELF/ANTP,PASS/ANTC/REFL/SELF/ANTP
-oppositional-passantcreflselfrecp,Oppositional,PASS/ANTC/REFL/SELF/RECP,PASS/ANTC/REFL/SELF/RECP
-oppositional-passantcreflselfrecpantp,Oppositional,PASS/ANTC/REFL/SELF/RECP/ANTP,PASS/ANTC/REFL/SELF/RECP/ANTP
-oppositional-passantcreflselfrecpantpimpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,PASS/ANTC/REFL/SELF/RECP/ANTP/IMP/FAC
-oppositional-passantcreflselfrecpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/FAC,PASS/ANTC/REFL/SELF/RECP/FAC
-oppositional-passantcreflselfrecpimpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/IMP/FAC,PASS/ANTC/REFL/SELF/RECP/IMP/FAC
-oppositional-passfac,Oppositional,PASS/FAC,PASS/FAC
-oppositional-passrecp,Oppositional,PASS/RECP,PASS/RECP
-oppositional-passrefl,Oppositional,PASS/REFL,PASS/REFL
-oppositional-passreflant,Oppositional,PASS/REFL/ANT,PASS/REFL/ANT
-oppositional-passreflantp,Oppositional,PASS/REFL/ANTP,PASS/REFL/ANTP
-oppositional-passreflrecp,Oppositional,PASS/REFL/RECP,PASS/REFL/RECP
-oppositional-passreflrecpantp,Oppositional,PASS/REFL/RECP/ANTP,PASS/REFL/RECP/ANTP
-oppositional-passreflself,Oppositional,PASS/REFL/SELF,PASS/REFL/SELF
-oppositional-passreflselfantp,Oppositional,PASS/REFL/SELF/ANTP,PASS/REFL/SELF/ANTP
-oppositional-passreflselfrecp,Oppositional,PASS/REFL/SELF/RECP,PASS/REFL/SELF/RECP
-oppositional-passreflselfrecpimp,Oppositional,PASS/REFL/SELF/RECP/IMP,PASS/REFL/SELF/RECP/IMP
-oppositional-recp,Oppositional,RECP,RECP
-oppositional-recpantp,Oppositional,RECP/ANTP,RECP/ANTP
-oppositional-refl,Oppositional,REFL,REFL
-oppositional-reflrecp,Oppositional,REFL/RECP,REFL/RECP
-oppositional-reflrecpantp,Oppositional,REFL/RECP/ANTP,REFL/RECP/ANTP
-oppositional-reflself,Oppositional,REFL/SELF,REFL/SELF
-oppositional-reflselfrecp,Oppositional,REFL/SELF/RECP,REFL/SELF/RECP
-oppositional-reflselfrecpantp,Oppositional,REFL/SELF/RECP/ANTP,REFL/SELF/RECP/ANTP
-other_opp_class-aspect,Other_opp_class,aspect,aspect
-other_opp_class-aspectlowtrans,Other_opp_class,"aspect, lowtrans","aspect, lowered transitivity"
-other_opp_class-aspectlowtransother,Other_opp_class,"aspect, lowtrans, other","aspect, lowered transitivity, other"
-other_opp_class-aspectother,Other_opp_class,"aspect, other","aspect, other"
-other_opp_class-lowtrans,Other_opp_class,lowtrans,lowered transitivity
-other_opp_class-other,Other_opp_class,other,other
-passive-compl,Passive,compl,construction in complementary distribution
-passive-compt,Passive,compt,construction in competition
-passive-mid,Passive,mid,middle marker
-passive-no,Passive,no,no
-reciprocal-compl,Reciprocal,compl,construction in complementary distribution
-reciprocal-compt,Reciprocal,compt,construction in competition
-reciprocal-mid,Reciprocal,mid,middle marker
-reciprocal-no,Reciprocal,no,no
-reflexive-compl,Reflexive,compl,construction in complementary distribution
-reflexive-compt,Reflexive,compt,construction in competition
-reflexive-mid,Reflexive,mid,middle marker
-reflexive-no,Reflexive,no,no
-selfbenefactive-mid,Selfbenefactive,mid,middle marker
-selfbenefactive-no,Selfbenefactive,no,no
-source-norefl,Source,norefl,non-reflexive voice marker
-source-refl,Source,refl,reflexive
-source-unknown,Source,unknown,unknown
-source_2-aspect,Source_2,aspect,aspectual markers
-source_2-lex,Source_2,lex,lexical source
-source_2-nomverb,Source_2,nom/verb,nominalizers/verbalizers 
-source_2-plur,Source_2,plur,plurality markers
-source_2-uncontr,Source_2,uncontr,marker of uncontrolled situations
-source_2-voice,Source_2,voice,voice
-type2-circumfix,Type2,circumfix,circumfix
-type2-cliticpronoun,Type2,clitic pronoun,clitic pronoun
-type2-infix,Type2,infix,infix
-type2-numbervoice,Type2,number/voice,number/voice
-type2-objectpronoun,Type2,object pronoun,object pronoun
-type2-objectpronouns,Type2,object pronouns,object pronouns
-type2-personindex,Type2,person index,person index
-type2-personindexes,Type2,person indexes,person indexes
-type2-personnumbervoiceendings,Type2,person/number/voice endings,person/number/voice endings
-type2-personprefixes,Type2,person prefixes,person prefixes
-type2-preaspiration,Type2,preaspiration,preaspiration
-type2-prefix,Type2,prefix,prefix
-type2-prefixvoweltemplate,Type2,prefix+vowel template,prefix+vowel template
-type2-preverb,Type2,preverb,preverb
-type2-pronoun,Type2,pronoun,pronoun
-type2-reduplication,Type2,reduplication,reduplication
-type2-reflexivepronouns,Type2,reflexive pronouns,reflexive pronouns
-type2-subjobjindex,Type2,subj/obj index,subject/object indexes
-type2-suffix,Type2,suffix,suffix
-type2-tamvoice,Type2,TAM/voice,TAM/voice
-type2-tamvoicepersonendings,Type2,TAM/voice/person endings,TAM/voice/person endings
-type2-verbtemplate,Type2,verb template,verb template
-type2-vowellenghteninghightone,Type2,vowel lenghtening/high tone,vowel lenghtening/high tone
+ID,Original_Parameter_Name,Original_Name,Name,Map_Icon
+anticausative-compl,Anticausative,compl,construction in complementary distribution,
+anticausative-compt,Anticausative,compt,construction in competition,
+anticausative-mid,Anticausative,mid,middle marker,
+anticausative-no,Anticausative,no,no,
+antipassive-compl,Antipassive,compl,construction in complementary distribution,
+antipassive-compt,Antipassive,compt,construction in competition,
+antipassive-mid,Antipassive,mid,middle marker,
+antipassive-no,Antipassive,no,no,
+co-occurence-no,Co-occurence,no,no,
+co-occurence-yes,Co-occurence,yes,yes,
+cognate-no,Cognate,no,no,
+cognate-yes,Cognate,yes,yes,
+facilitative-mid,Facilitative,mid,middle marker,
+facilitative-no,Facilitative,no,no,
+impersonal-mid,Impersonal,mid,middle marker,
+impersonal-no,Impersonal,no,no,
+multiplemarkinglanguage-no,Multiple marking language,no,a single middle marker,cFFFF00
+multiplemarkinglanguage-yes,Multiple marking language,yes,multiple middle markers,cFF0000
+n-analytic,n,analytic,analytic,
+n-synth,n,synth,synthetic,
+number_opp_functions-1,Number_opp_functions,1,1,
+number_opp_functions-2,Number_opp_functions,2,2,
+number_opp_functions-3,Number_opp_functions,3,3,
+number_opp_functions-4,Number_opp_functions,4,4,
+number_opp_functions-5,Number_opp_functions,5,5,
+number_opp_functions-6,Number_opp_functions,6,6,
+number_opp_functions-7,Number_opp_functions,7,7,
+number_opp_functions-8,Number_opp_functions,8,8,
+oppositional-antc,Oppositional,ANTC,ANTC,
+oppositional-antcantp,Oppositional,ANTC/ANTP,ANTC/ANTP,
+oppositional-antcantpimp,Oppositional,ANTC/ANTP/IMP,ANTC/ANTP/IMP,
+oppositional-antcfac,Oppositional,ANTC/FAC,ANTC/FAC,
+oppositional-antcrefl,Oppositional,ANTC/REFL,ANTC/REFL,
+oppositional-antcreflantp,Oppositional,ANTC/REFL/ANTP,ANTC/REFL/ANTP,
+oppositional-antcreflimp,Oppositional,ANTC/REFL/IMP,ANTC/REFL/IMP,
+oppositional-antcreflrecp,Oppositional,ANTC/REFL/RECP,ANTC/REFL/RECP,
+oppositional-antcreflrecpantp,Oppositional,ANTC/REFL/RECP/ANTP,ANTC/REFL/RECP/ANTP,
+oppositional-antcreflrecpantpfac,Oppositional,ANTC/REFL/RECP/ANTP/FAC,ANTC/REFL/RECP/ANTP/FAC,
+oppositional-antcreflrecpantpimp,Oppositional,ANTC/REFL/RECP/ANTP/IMP,ANTC/REFL/RECP/ANTP/IMP,
+oppositional-antcreflself,Oppositional,ANTC/REFL/SELF,ANTC/REFL/SELF,
+oppositional-antcreflselfrecp,Oppositional,ANTC/REFL/SELF/RECP,ANTC/REFL/SELF/RECP,
+oppositional-antcreflselfrecpantpimpfac,Oppositional,ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,
+oppositional-antcreflselfrecpimpfac,Oppositional,ANTC/REFL/SELF/RECP/IMP/FAC,ANTC/REFL/SELF/RECP/IMP/FAC,
+oppositional-antcself,Oppositional,ANTC/SELF,ANTC/SELF,
+oppositional-antcselfrecp,Oppositional,ANTC/SELF/RECP,ANTC/SELF/RECP,
+oppositional-pass,Oppositional,PASS,PASS,
+oppositional-passantc,Oppositional,PASS/ANTC,PASS/ANTC,
+oppositional-passantcantp,Oppositional,PASS/ANTC/ANTP,PASS/ANTC/ANTP,
+oppositional-passantcfac,Oppositional,PASS/ANTC/FAC,PASS/ANTC/FAC,
+oppositional-passantcimpfac,Oppositional,PASS/ANTC/IMP/FAC,PASS/ANTC/IMP/FAC,
+oppositional-passantcrecp,Oppositional,PASS/ANTC/RECP,PASS/ANTC/RECP,
+oppositional-passantcrecpfac,Oppositional,PASS/ANTC/RECP/FAC,PASS/ANTC/RECP/FAC,
+oppositional-passantcrefl,Oppositional,PASS/ANTC/REFL,PASS/ANTC/REFL,
+oppositional-passantcreflantp,Oppositional,PASS/ANTC/REFL/ANTP,PASS/ANTC/REFL/ANTP,
+oppositional-passantcreflrecp,Oppositional,PASS/ANTC/REFL/RECP,PASS/ANTC/REFL/RECP,
+oppositional-passantcreflrecpantp,Oppositional,PASS/ANTC/REFL/RECP/ANTP,PASS/ANTC/REFL/RECP/ANTP,
+oppositional-passantcreflrecpfac,Oppositional,PASS/ANTC/REFL/RECP/FAC,PASS/ANTC/REFL/RECP/FAC,
+oppositional-passantcreflrecpimp,Oppositional,PASS/ANTC/REFL/RECP/IMP,PASS/ANTC/REFL/RECP/IMP,
+oppositional-passantcreflself,Oppositional,PASS/ANTC/REFL/SELF,PASS/ANTC/REFL/SELF,
+oppositional-passantcreflselfantp,Oppositional,PASS/ANTC/REFL/SELF/ANTP,PASS/ANTC/REFL/SELF/ANTP,
+oppositional-passantcreflselfrecp,Oppositional,PASS/ANTC/REFL/SELF/RECP,PASS/ANTC/REFL/SELF/RECP,
+oppositional-passantcreflselfrecpantp,Oppositional,PASS/ANTC/REFL/SELF/RECP/ANTP,PASS/ANTC/REFL/SELF/RECP/ANTP,
+oppositional-passantcreflselfrecpantpimpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,PASS/ANTC/REFL/SELF/RECP/ANTP/IMP/FAC,
+oppositional-passantcreflselfrecpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/FAC,PASS/ANTC/REFL/SELF/RECP/FAC,
+oppositional-passantcreflselfrecpimpfac,Oppositional,PASS/ANTC/REFL/SELF/RECP/IMP/FAC,PASS/ANTC/REFL/SELF/RECP/IMP/FAC,
+oppositional-passfac,Oppositional,PASS/FAC,PASS/FAC,
+oppositional-passrecp,Oppositional,PASS/RECP,PASS/RECP,
+oppositional-passrefl,Oppositional,PASS/REFL,PASS/REFL,
+oppositional-passreflant,Oppositional,PASS/REFL/ANT,PASS/REFL/ANT,
+oppositional-passreflantp,Oppositional,PASS/REFL/ANTP,PASS/REFL/ANTP,
+oppositional-passreflrecp,Oppositional,PASS/REFL/RECP,PASS/REFL/RECP,
+oppositional-passreflrecpantp,Oppositional,PASS/REFL/RECP/ANTP,PASS/REFL/RECP/ANTP,
+oppositional-passreflself,Oppositional,PASS/REFL/SELF,PASS/REFL/SELF,
+oppositional-passreflselfantp,Oppositional,PASS/REFL/SELF/ANTP,PASS/REFL/SELF/ANTP,
+oppositional-passreflselfrecp,Oppositional,PASS/REFL/SELF/RECP,PASS/REFL/SELF/RECP,
+oppositional-passreflselfrecpimp,Oppositional,PASS/REFL/SELF/RECP/IMP,PASS/REFL/SELF/RECP/IMP,
+oppositional-recp,Oppositional,RECP,RECP,
+oppositional-recpantp,Oppositional,RECP/ANTP,RECP/ANTP,
+oppositional-refl,Oppositional,REFL,REFL,
+oppositional-reflrecp,Oppositional,REFL/RECP,REFL/RECP,
+oppositional-reflrecpantp,Oppositional,REFL/RECP/ANTP,REFL/RECP/ANTP,
+oppositional-reflself,Oppositional,REFL/SELF,REFL/SELF,
+oppositional-reflselfrecp,Oppositional,REFL/SELF/RECP,REFL/SELF/RECP,
+oppositional-reflselfrecpantp,Oppositional,REFL/SELF/RECP/ANTP,REFL/SELF/RECP/ANTP,
+other_opp_class-aspect,Other_opp_class,aspect,aspect,
+other_opp_class-aspectlowtrans,Other_opp_class,"aspect, lowtrans","aspect, lowered transitivity",
+other_opp_class-aspectlowtransother,Other_opp_class,"aspect, lowtrans, other","aspect, lowered transitivity, other",
+other_opp_class-aspectother,Other_opp_class,"aspect, other","aspect, other",
+other_opp_class-lowtrans,Other_opp_class,lowtrans,lowered transitivity,
+other_opp_class-other,Other_opp_class,other,other,
+passive-compl,Passive,compl,construction in complementary distribution,
+passive-compt,Passive,compt,construction in competition,
+passive-mid,Passive,mid,middle marker,
+passive-no,Passive,no,no,
+reciprocal-compl,Reciprocal,compl,construction in complementary distribution,
+reciprocal-compt,Reciprocal,compt,construction in competition,
+reciprocal-mid,Reciprocal,mid,middle marker,
+reciprocal-no,Reciprocal,no,no,
+reflexive-compl,Reflexive,compl,construction in complementary distribution,
+reflexive-compt,Reflexive,compt,construction in competition,
+reflexive-mid,Reflexive,mid,middle marker,
+reflexive-no,Reflexive,no,no,
+selfbenefactive-mid,Selfbenefactive,mid,middle marker,
+selfbenefactive-no,Selfbenefactive,no,no,
+source-norefl,Source,norefl,non-reflexive voice marker,
+source-refl,Source,refl,reflexive,
+source-unknown,Source,unknown,unknown,
+source_2-aspect,Source_2,aspect,aspectual markers,
+source_2-lex,Source_2,lex,lexical source,
+source_2-nomverb,Source_2,nom/verb,nominalizers/verbalizers ,
+source_2-plur,Source_2,plur,plurality markers,
+source_2-uncontr,Source_2,uncontr,marker of uncontrolled situations,
+source_2-voice,Source_2,voice,voice,
+type2-circumfix,Type2,circumfix,circumfix,
+type2-cliticpronoun,Type2,clitic pronoun,clitic pronoun,
+type2-infix,Type2,infix,infix,
+type2-numbervoice,Type2,number/voice,number/voice,
+type2-objectpronoun,Type2,object pronoun,object pronoun,
+type2-objectpronouns,Type2,object pronouns,object pronouns,
+type2-personindex,Type2,person index,person index,
+type2-personindexes,Type2,person indexes,person indexes,
+type2-personnumbervoiceendings,Type2,person/number/voice endings,person/number/voice endings,
+type2-personprefixes,Type2,person prefixes,person prefixes,
+type2-preaspiration,Type2,preaspiration,preaspiration,
+type2-prefix,Type2,prefix,prefix,
+type2-prefixvoweltemplate,Type2,prefix+vowel template,prefix+vowel template,
+type2-preverb,Type2,preverb,preverb,
+type2-pronoun,Type2,pronoun,pronoun,
+type2-reduplication,Type2,reduplication,reduplication,
+type2-reflexivepronouns,Type2,reflexive pronouns,reflexive pronouns,
+type2-subjobjindex,Type2,subj/obj index,subject/object indexes,
+type2-suffix,Type2,suffix,suffix,
+type2-tamvoice,Type2,TAM/voice,TAM/voice,
+type2-tamvoicepersonendings,Type2,TAM/voice/person endings,TAM/voice/person endings,
+type2-verbtemplate,Type2,verb template,verb template,
+type2-vowellenghteninghightone,Type2,vowel lenghtening/high tone,vowel lenghtening/high tone,

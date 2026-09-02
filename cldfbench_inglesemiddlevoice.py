@@ -42,6 +42,7 @@ def read_ccodes(csv_rows, cparameters, lparameters):
             'ID': row['ID'],
             'Parameter_ID': parameter_ids[row['Original_Parameter_Name']],
             'Name': row['Name'],
+            'Map_Icon': row.get('Map_Icon') or '',
         }
         for row in csv_rows}
 
@@ -151,7 +152,7 @@ def iter_aggregated_markers(data):
 def cldf_schema(cldf):
     cldf.add_component('LanguageTable')
     cldf.add_component('ParameterTable')
-    cldf.add_component('CodeTable')
+    cldf.add_component('CodeTable', 'Map_Icon')
     cldf.add_table(
         'constructions.csv',
         'http://cldf.clld.org/v1.0/terms.rdf#id',

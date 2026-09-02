@@ -1,4 +1,4 @@
 Original_Name,Name,Description,Possible values
-Multiple marking language,Multiple_marking_language,Does a language has more than one middle marker.,no; yes
-Cognate,Multiple_marking_language.cognate,"If a language has more than one middle marker, are they cognate with each other?",_; no; yes
-Co-occurence,Multiple_marking_language.co.occurence,"If a language has more than one middle marker, can they co-occur?",_; no; yes
+Multiple marking language,One vs. several middle markers,Does the language have a single middle marker or several?,no; yes
+Cognate,Multiple middle markers: Cognacy,"If a language has more than one middle marker, are they cognate with each other?",_; no; yes
+Co-occurence,Multiple middle markers: Co-occurrence,"If a language has more than one middle marker, can they co-occur?",_; no; yes
