@@ -15,20 +15,20 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/inglesemiddlevoice",
             "rdf:type": "prov:Entity",
-            "dc:created": "95454a0",
+            "dc:created": "fc6c42a",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v5.2",
+            "dc:created": "v5.3",
             "dc:title": "Glottolog"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.10.19"
+            "dc:description": "3.10.20"
         },
         {
             "dc:title": "python-packages",
@@ -283,6 +283,10 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "required": false,
                         "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Map_Icon"
                     }
                 ],
                 "foreignKeys": [
