@@ -1,0 +1,35 @@
+{
+    "title": "Middle voice markers in the languages of the world",
+    "access_right": "open",
+    "keywords": [
+        "cldf:StructureDataset",
+        "linguistics"
+    ],
+    "upload_type": "dataset",
+    "license": {
+        "id": "CC-BY-4.0"
+    },
+    "communities": [
+        {
+            "identifier": "cldf-datasets"
+        },
+        {
+            "identifier": "crossgram"
+        }
+    ],
+    "creators": [
+        {
+            "name": "Guglielmo Inglese"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Johannes Englisch",
+            "type": "Other"
+        },
+        {
+            "name": "Martin Haspelmath",
+            "type": "Other"
+        }
+    ]
+}

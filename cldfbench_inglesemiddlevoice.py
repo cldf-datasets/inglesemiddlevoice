@@ -91,7 +91,7 @@ def make_markers(data, sources):
             'Source': [
                 citation
                 for citation in re.split(r'\s*;\s*', row['References'])
-                if valid_marker_citation(citation, sources, gc, row['Middle marker'])]
+                if valid_marker_citation(citation, sources, gc, row['Middle marker'])],
         }
         for row in data}
     assert len(markers) == len(data), 'markers are unique'
