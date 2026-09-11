@@ -7,10 +7,10 @@ antipassive-compl,antipassive,construction in complementary distribution,,
 antipassive-compt,antipassive,construction in competition,,
 antipassive-mid,antipassive,middle marker,,
 antipassive-no,antipassive,no,,
-co-occurence-no,multiplemiddlemarkersco-occurrence,no,,
-co-occurence-yes,multiplemiddlemarkersco-occurrence,yes,,
-cognate-no,multiplemiddlemarkerscognacy,no,,
-cognate-yes,multiplemiddlemarkerscognacy,yes,,
+co-occurence-no,multiplemiddlemarkersco-occurrence,no,,cFFFFFF
+co-occurence-yes,multiplemiddlemarkersco-occurrence,yes,,cFF0000
+cognate-no,multiplemiddlemarkerscognacy,no,,cFFFFFF
+cognate-yes,multiplemiddlemarkerscognacy,yes,,cFF0000
 facilitative-mid,facilitative,middle marker,,
 facilitative-no,facilitative,no,,
 impersonal-mid,impersonal,middle marker,,
