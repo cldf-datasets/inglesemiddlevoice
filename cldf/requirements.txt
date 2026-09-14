@@ -2,7 +2,7 @@ attrs==26.1.0
 babel==2.18.0
 bibtexparser==2.0.0b9
 cldfbench==2.0.1
--e git+https://github.com/cldf-datasets/inglesemiddlevoice@cd5eb760add433f92b29465f9cc499a323462688#egg=cldfbench_inglesemiddlevoice
+-e git+https://github.com/cldf-datasets/inglesemiddlevoice@d94b011924b562be0fd296aa6668a77b3e005ed2#egg=cldfbench_inglesemiddlevoice
 cldfcatalog==1.7.0
 cldfzenodo==3.0.0
 clldutils==4.0.0
