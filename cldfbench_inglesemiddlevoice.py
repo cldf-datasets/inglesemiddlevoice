@@ -239,7 +239,9 @@ class Dataset(BaseDataset):
         args.writer.objects['ParameterTable'] = [
             *cparameters.values(),
             *lparameters.values(),
-            {'ID': 'middle-markers', 'Name': 'Middle markers'}]
+            {'ID': 'middle-markers',
+             'Description': 'What are the shapes of the middle markers?',
+             'Name': 'Middle markers'}]
         args.writer.objects['CodeTable'] = codes.values()
         args.writer.objects['ValueTable'] = lvalues
         args.writer.objects['constructions.csv'] = markers.values()
